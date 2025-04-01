@@ -1,12 +1,13 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <Header />
-    <router-view></router-view>
+    <router-view class="mt-5 mb-5 border-0"></router-view>
+    <Footer />
   </div>
 </template>
 <script>
 import Header from '@/components/Header.vue';
-
+import Footer from '@/components/Footer.vue';
 export default {
   name: 'App',
   components: { Header, Footer },
